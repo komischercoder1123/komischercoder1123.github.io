@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mein App Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Mein App Store</h1>
+    </div>
+    <div class="controls">
+      <input id="searchInput" placeholder="App suchen..." aria-label="App suchen">
+      <select id="categorySelect">
+        <option value="">Alle Kategorien</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <div id="appContainer" class="app-grid"></div>
+    <div id="emptyMsg" class="empty hidden">Keine Apps gefunden.</div>
+  </main>
+
+  <!-- Modal / Detail -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Schließen">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer>
+    <small>© 2025 Mein App Store</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
